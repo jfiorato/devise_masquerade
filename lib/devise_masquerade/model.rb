@@ -32,7 +32,7 @@ module Devise
           # clean up the cached masquerade key value
           remove_masquerade_key!(key)
 
-          find_by_id(id)
+          find_by(id: id)
         end
       end # ClassMethods
     end
